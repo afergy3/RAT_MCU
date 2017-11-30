@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Mon Nov 13 14:27:54 2017
+# Process ID: 5444
+# Current directory: C:/Users/aferg/CPE233_Fall_2017
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13556 C:\Users\aferg\CPE233_Fall_2017\CPE233_Fall_2017.xpr
+# Log file: C:/Users/aferg/CPE233_Fall_2017/vivado.log
+# Journal file: C:/Users/aferg/CPE233_Fall_2017\vivado.jou
+#-----------------------------------------------------------
+start_gui

@@ -1,0 +1,1407 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Tue Nov 14 19:10:35 2017
+# Process ID: 5644
+# Current directory: C:/Users/afergu06/Documents/CPE233_Fall_2017
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6412 C:\Users\afergu06\Documents\CPE233_Fall_2017\CPE233_Fall_2017.xpr
+# Log file: C:/Users/afergu06/Documents/CPE233_Fall_2017/vivado.log
+# Journal file: C:/Users/afergu06/Documents/CPE233_Fall_2017\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/aferg/CPE233_Fall_2017' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/afergu06/Documents/Downloads/RatSim v0.61/RatSimulator/prog_rom.vhd', nor could it be found using path 'C:/Users/aferg/Downloads/RatSim v0.61/RatSimulator/prog_rom.vhd'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+update_compile_order -fileset sources_1
+add_files -norecurse C:/Users/afergu06/Documents/prog_rom.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RAT_wrapper' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj RAT_wrapper_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CONTROL_UNIT
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/FlagReg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FlagReg
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/MUX_2x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_2x1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Mux_2x1_10B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_2x1_10B
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Mux_4x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_4x1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/PC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PC
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RAT_MCU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_MCU
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RegisterFile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegisterFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Scratch_Ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Scratch_Ram
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Stack_Pointer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Stack_Pointer
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/and2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity and2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/cdiv2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clk_div2_buf
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/prog_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity my_prog_rom
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RAT_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_wrapper
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 8b3c45041bba49dc9a7b38ce29145ce6 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot RAT_wrapper_behav xil_defaultlib.RAT_wrapper -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling package ieee.numeric_bit
+Compiling architecture behavioral of entity xil_defaultlib.clk_div2_buf [clk_div2_buf_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(initp_00="101100111000...]
+Compiling architecture ramb16_s18_v of entity unisim.RAMB16_S18 [\RAMB16_S18(initp_00="1011001110...]
+Compiling architecture low_level_definition of entity xil_defaultlib.my_prog_rom [my_prog_rom_default]
+Compiling architecture alu_arch of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTROL_UNIT [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegisterFile [registerfile_default]
+Compiling architecture behavioral of entity xil_defaultlib.PC [pc_default]
+Compiling architecture behavioral of entity xil_defaultlib.FlagReg [flagreg_default]
+Compiling architecture behavioral of entity xil_defaultlib.and2 [and2_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_4x1 [mux_4x1_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2x1 [mux_2x1_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2x1_10B [mux_2x1_10b_default]
+Compiling architecture scratch of entity xil_defaultlib.Scratch_Ram [scratch_ram_default]
+Compiling architecture my_pointer of entity xil_defaultlib.Stack_Pointer [stack_pointer_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_MCU [rat_mcu_default]
+Compiling architecture behavioral of entity xil_defaultlib.rat_wrapper
+Built simulation snapshot RAT_wrapper_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/xsim.dir/RAT_wrapper_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/xsim.dir/RAT_wrapper_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Nov 14 19:17:42 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Nov 14 19:17:42 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 820.520 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RAT_wrapper_behav -key {Behavioral:sim_1:Functional:RAT_wrapper} -tclbatch {RAT_wrapper.tcl} -view {C:/Users/afergu06/Documents/CPE233_Fall_2017/RAT_wrapper_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+open_wave_config C:/Users/afergu06/Documents/CPE233_Fall_2017/RAT_wrapper_behav.wcfg
+source RAT_wrapper.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RAT_wrapper_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 820.520 ; gain = 0.000
+add_force {/RAT_wrapper/CLK} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+add_force {/RAT_wrapper/RESET} -radix hex {0 0ns}
+add_force {/RAT_wrapper/BUTTONS} -radix hex {0 0ns}
+add_force {/RAT_wrapper/SWITCHES} -radix hex {0 0ns}
+run 10 us
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Tue Nov 14 19:19:25 2017] Launched synth_1...
+Run output will be captured here: C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.runs/synth_1/runme.log
+[Tue Nov 14 19:19:25 2017] Launched impl_1...
+Run output will be captured here: C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.2
+  **** Build date : Jun 15 2017-18:53:26
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183712030A
+set_property PROGRAM.FILE {C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.runs/impl_1/RAT_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.runs/impl_1/RAT_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+update_compile_order -fileset sources_1
+add_files -norecurse C:/Users/afergu06/Documents/prog_rom.vhd
+WARNING: [filemgmt 56-12] File 'C:/Users/afergu06/Documents/prog_rom.vhd' cannot be added to the project because it already exists in the project, skipping this file
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Tue Nov 14 19:29:26 2017] Launched synth_1...
+Run output will be captured here: C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.runs/synth_1/runme.log
+[Tue Nov 14 19:29:26 2017] Launched impl_1...
+Run output will be captured here: C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.runs/impl_1/RAT_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183712030A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183712030A
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183712030A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183712030A
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RAT_wrapper' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj RAT_wrapper_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CONTROL_UNIT
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/FlagReg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FlagReg
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/MUX_2x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_2x1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Mux_2x1_10B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_2x1_10B
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Mux_4x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_4x1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/PC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PC
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RAT_MCU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_MCU
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RegisterFile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegisterFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Scratch_Ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Scratch_Ram
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Stack_Pointer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Stack_Pointer
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/and2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity and2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/cdiv2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clk_div2_buf
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/prog_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity my_prog_rom
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RAT_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_wrapper
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 8b3c45041bba49dc9a7b38ce29145ce6 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot RAT_wrapper_behav xil_defaultlib.RAT_wrapper -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling package ieee.numeric_bit
+Compiling architecture behavioral of entity xil_defaultlib.clk_div2_buf [clk_div2_buf_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(initp_00="101100111000...]
+Compiling architecture ramb16_s18_v of entity unisim.RAMB16_S18 [\RAMB16_S18(initp_00="1011001110...]
+Compiling architecture low_level_definition of entity xil_defaultlib.my_prog_rom [my_prog_rom_default]
+Compiling architecture alu_arch of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTROL_UNIT [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegisterFile [registerfile_default]
+Compiling architecture behavioral of entity xil_defaultlib.PC [pc_default]
+Compiling architecture behavioral of entity xil_defaultlib.FlagReg [flagreg_default]
+Compiling architecture behavioral of entity xil_defaultlib.and2 [and2_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_4x1 [mux_4x1_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2x1 [mux_2x1_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2x1_10B [mux_2x1_10b_default]
+Compiling architecture scratch of entity xil_defaultlib.Scratch_Ram [scratch_ram_default]
+Compiling architecture my_pointer of entity xil_defaultlib.Stack_Pointer [stack_pointer_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_MCU [rat_mcu_default]
+Compiling architecture behavioral of entity xil_defaultlib.rat_wrapper
+Built simulation snapshot RAT_wrapper_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/xsim.dir/RAT_wrapper_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/xsim.dir/RAT_wrapper_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Nov 14 19:37:12 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Nov 14 19:37:12 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RAT_wrapper_behav -key {Behavioral:sim_1:Functional:RAT_wrapper} -tclbatch {RAT_wrapper.tcl} -view {C:/Users/afergu06/Documents/CPE233_Fall_2017/RAT_wrapper_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+open_wave_config C:/Users/afergu06/Documents/CPE233_Fall_2017/RAT_wrapper_behav.wcfg
+source RAT_wrapper.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RAT_wrapper_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1027.863 ; gain = 0.000
+add_force {/RAT_wrapper/RESET} -radix hex {0 0ns}
+add_force {/RAT_wrapper/CLK} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+add_force {/RAT_wrapper/BUTTONS} -radix hex {0 0ns}
+add_force {/RAT_wrapper/SWITCHES} -radix hex {0 0ns}
+run 10 us
+add_wave {{/RAT_wrapper/MCU/my_PC/PC_COUNT}} 
+run 10 us
+add_wave {{/RAT_wrapper/MCU/my_PC/PC_LD}} 
+add_wave {{/RAT_wrapper/MCU/my_PC/D_IN}} 
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RAT_wrapper' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj RAT_wrapper_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CONTROL_UNIT
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/FlagReg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FlagReg
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/MUX_2x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_2x1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Mux_2x1_10B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_2x1_10B
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Mux_4x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_4x1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/PC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PC
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RAT_MCU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_MCU
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RegisterFile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegisterFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Scratch_Ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Scratch_Ram
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Stack_Pointer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Stack_Pointer
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/and2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity and2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/cdiv2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clk_div2_buf
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/prog_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity my_prog_rom
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RAT_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_wrapper
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 8b3c45041bba49dc9a7b38ce29145ce6 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot RAT_wrapper_behav xil_defaultlib.RAT_wrapper -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling package ieee.numeric_bit
+Compiling architecture behavioral of entity xil_defaultlib.clk_div2_buf [clk_div2_buf_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(initp_00="101100111000...]
+Compiling architecture ramb16_s18_v of entity unisim.RAMB16_S18 [\RAMB16_S18(initp_00="1011001110...]
+Compiling architecture low_level_definition of entity xil_defaultlib.my_prog_rom [my_prog_rom_default]
+Compiling architecture alu_arch of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTROL_UNIT [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegisterFile [registerfile_default]
+Compiling architecture behavioral of entity xil_defaultlib.PC [pc_default]
+Compiling architecture behavioral of entity xil_defaultlib.FlagReg [flagreg_default]
+Compiling architecture behavioral of entity xil_defaultlib.and2 [and2_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_4x1 [mux_4x1_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2x1 [mux_2x1_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2x1_10B [mux_2x1_10b_default]
+Compiling architecture scratch of entity xil_defaultlib.Scratch_Ram [scratch_ram_default]
+Compiling architecture my_pointer of entity xil_defaultlib.Stack_Pointer [stack_pointer_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_MCU [rat_mcu_default]
+Compiling architecture behavioral of entity xil_defaultlib.rat_wrapper
+Built simulation snapshot RAT_wrapper_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/xsim.dir/RAT_wrapper_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/xsim.dir/RAT_wrapper_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Nov 14 21:28:25 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Nov 14 21:28:25 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RAT_wrapper_behav -key {Behavioral:sim_1:Functional:RAT_wrapper} -tclbatch {RAT_wrapper.tcl} -view {C:/Users/afergu06/Documents/CPE233_Fall_2017/RAT_wrapper_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+open_wave_config C:/Users/afergu06/Documents/CPE233_Fall_2017/RAT_wrapper_behav.wcfg
+source RAT_wrapper.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RAT_wrapper_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1054.875 ; gain = 0.000
+add_force {/RAT_wrapper/CLK} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+add_force {/RAT_wrapper/RESET} -radix hex {0 0ns}
+add_force {/RAT_wrapper/BUTTONS} -radix hex {0 0ns}
+add_force {/RAT_wrapper/SWITCHES} -radix hex {0 0ns}
+run 10 us
+add_wave {{/RAT_wrapper/MCU/my_SCR/WE}} 
+add_wave {{/RAT_wrapper/MCU/my_SCR/DATA_IN}} 
+add_wave {{/RAT_wrapper/MCU/my_SCR/DATA_OUT}} 
+run 10 us
+add_wave {{/RAT_wrapper/MCU/my_SCR/ADDR}} 
+run 10 us
+add_wave {{/RAT_wrapper/MCU/my_SCR_ADDR_MUX/sel}} 
+run 10 us
+add_wave {{/RAT_wrapper/MCU/my_SP/POINT_OUT}} 
+run 10 us
+add_wave {{/RAT_wrapper/MCU/my_SP/DATA}} 
+add_wave {{/RAT_wrapper/MCU/my_SP/DECR}} 
+add_wave {{/RAT_wrapper/MCU/my_SP/INCR}} 
+add_wave {{/RAT_wrapper/MCU/my_SP/LD}} 
+add_wave {{/RAT_wrapper/MCU/my_SP/RST}} 
+run 10 us
+set_property top Stack_Pointer [current_fileset]
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RAT_wrapper' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj RAT_wrapper_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CONTROL_UNIT
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/FlagReg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FlagReg
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/MUX_2x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_2x1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Mux_2x1_10B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_2x1_10B
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Mux_4x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_4x1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/PC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PC
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RAT_MCU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_MCU
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RegisterFile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegisterFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Scratch_Ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Scratch_Ram
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Stack_Pointer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Stack_Pointer
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/and2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity and2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/cdiv2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clk_div2_buf
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/prog_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity my_prog_rom
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RAT_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_wrapper
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 8b3c45041bba49dc9a7b38ce29145ce6 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot RAT_wrapper_behav xil_defaultlib.RAT_wrapper -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling package ieee.numeric_bit
+Compiling architecture behavioral of entity xil_defaultlib.clk_div2_buf [clk_div2_buf_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(initp_00="101100111000...]
+Compiling architecture ramb16_s18_v of entity unisim.RAMB16_S18 [\RAMB16_S18(initp_00="1011001110...]
+Compiling architecture low_level_definition of entity xil_defaultlib.my_prog_rom [my_prog_rom_default]
+Compiling architecture alu_arch of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTROL_UNIT [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegisterFile [registerfile_default]
+Compiling architecture behavioral of entity xil_defaultlib.PC [pc_default]
+Compiling architecture behavioral of entity xil_defaultlib.FlagReg [flagreg_default]
+Compiling architecture behavioral of entity xil_defaultlib.and2 [and2_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_4x1 [mux_4x1_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2x1 [mux_2x1_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2x1_10B [mux_2x1_10b_default]
+Compiling architecture scratch of entity xil_defaultlib.Scratch_Ram [scratch_ram_default]
+Compiling architecture my_pointer of entity xil_defaultlib.Stack_Pointer [stack_pointer_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_MCU [rat_mcu_default]
+Compiling architecture behavioral of entity xil_defaultlib.rat_wrapper
+Built simulation snapshot RAT_wrapper_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/xsim.dir/RAT_wrapper_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/xsim.dir/RAT_wrapper_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Nov 14 21:51:16 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Nov 14 21:51:16 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RAT_wrapper_behav -key {Behavioral:sim_1:Functional:RAT_wrapper} -tclbatch {RAT_wrapper.tcl} -view {C:/Users/afergu06/Documents/CPE233_Fall_2017/RAT_wrapper_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+open_wave_config C:/Users/afergu06/Documents/CPE233_Fall_2017/RAT_wrapper_behav.wcfg
+source RAT_wrapper.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RAT_wrapper_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1093.465 ; gain = 0.000
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RAT_wrapper' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj RAT_wrapper_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CONTROL_UNIT
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/FlagReg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FlagReg
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/MUX_2x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_2x1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Mux_2x1_10B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_2x1_10B
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Mux_4x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_4x1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/PC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PC
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RAT_MCU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_MCU
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RegisterFile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegisterFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Scratch_Ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Scratch_Ram
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Stack_Pointer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Stack_Pointer
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/and2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity and2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/cdiv2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clk_div2_buf
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/prog_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity my_prog_rom
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RAT_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_wrapper
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 8b3c45041bba49dc9a7b38ce29145ce6 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot RAT_wrapper_behav xil_defaultlib.RAT_wrapper -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling package ieee.numeric_bit
+Compiling architecture behavioral of entity xil_defaultlib.clk_div2_buf [clk_div2_buf_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(initp_00="101100111000...]
+Compiling architecture ramb16_s18_v of entity unisim.RAMB16_S18 [\RAMB16_S18(initp_00="1011001110...]
+Compiling architecture low_level_definition of entity xil_defaultlib.my_prog_rom [my_prog_rom_default]
+Compiling architecture alu_arch of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTROL_UNIT [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegisterFile [registerfile_default]
+Compiling architecture behavioral of entity xil_defaultlib.PC [pc_default]
+Compiling architecture behavioral of entity xil_defaultlib.FlagReg [flagreg_default]
+Compiling architecture behavioral of entity xil_defaultlib.and2 [and2_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_4x1 [mux_4x1_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2x1 [mux_2x1_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2x1_10B [mux_2x1_10b_default]
+Compiling architecture scratch of entity xil_defaultlib.Scratch_Ram [scratch_ram_default]
+Compiling architecture my_pointer of entity xil_defaultlib.Stack_Pointer [stack_pointer_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_MCU [rat_mcu_default]
+Compiling architecture behavioral of entity xil_defaultlib.rat_wrapper
+Built simulation snapshot RAT_wrapper_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1124.566 ; gain = 0.000
+close [ open C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/stack_pointer_test.vhd w ]
+add_files C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/stack_pointer_test.vhd
+update_compile_order -fileset sources_1
+set_property top Test_Stack_Pointer [current_fileset]
+update_compile_order -fileset sources_1
+set_property top Test_Stack_Pointer [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Scratch_Ram.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/and2.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/stack_pointer_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RAT_MCU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Stack_Pointer.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/PC.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/prog_rom.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Control_Unit.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Scratch_Ram.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/and2.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/stack_pointer_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RAT_MCU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Stack_Pointer.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/PC.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/prog_rom.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Control_Unit.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Scratch_Ram.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/and2.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/stack_pointer_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RAT_MCU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Stack_Pointer.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/PC.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/prog_rom.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Control_Unit.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Scratch_Ram.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/and2.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/stack_pointer_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RAT_MCU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Stack_Pointer.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/PC.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/prog_rom.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Control_Unit.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Scratch_Ram.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/and2.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/stack_pointer_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RAT_MCU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Stack_Pointer.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/PC.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/prog_rom.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Control_Unit.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Scratch_Ram.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/and2.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/stack_pointer_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RAT_MCU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Stack_Pointer.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/PC.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/prog_rom.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Control_Unit.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Scratch_Ram.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/and2.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/stack_pointer_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RAT_MCU.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Stack_Pointer.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/PC.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/prog_rom.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Control_Unit.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/RAT_wrapper_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/simulate.log
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Test_Stack_Pointer' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj Test_Stack_Pointer_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/stack_pointer_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Test_Stack_Pointer
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 8b3c45041bba49dc9a7b38ce29145ce6 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Test_Stack_Pointer_behav xil_defaultlib.Test_Stack_Pointer -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture my_pointer of entity xil_defaultlib.test_stack_pointer
+Built simulation snapshot Test_Stack_Pointer_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/xsim.dir/Test_Stack_Pointer_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/xsim.dir/Test_Stack_Pointer_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Nov 14 21:54:26 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Nov 14 21:54:26 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Test_Stack_Pointer_behav -key {Behavioral:sim_1:Functional:Test_Stack_Pointer} -tclbatch {Test_Stack_Pointer.tcl} -view {C:/Users/afergu06/Documents/CPE233_Fall_2017/RAT_wrapper_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+open_wave_config C:/Users/afergu06/Documents/CPE233_Fall_2017/RAT_wrapper_behav.wcfg
+WARNING: Simulation object /RAT_wrapper/LEDS was not found in the design.
+WARNING: Simulation object /RAT_wrapper/SEGMENTS was not found in the design.
+WARNING: Simulation object /RAT_wrapper/DISP_EN was not found in the design.
+WARNING: Simulation object /RAT_wrapper/SWITCHES was not found in the design.
+WARNING: Simulation object /RAT_wrapper/BUTTONS was not found in the design.
+WARNING: Simulation object /RAT_wrapper/RESET was not found in the design.
+WARNING: Simulation object /RAT_wrapper/CLK was not found in the design.
+WARNING: Simulation object /RAT_wrapper/s_clk was not found in the design.
+WARNING: Simulation object /RAT_wrapper/s_input_port was not found in the design.
+WARNING: Simulation object /RAT_wrapper/s_output_port was not found in the design.
+WARNING: Simulation object /RAT_wrapper/s_port_id was not found in the design.
+WARNING: Simulation object /RAT_wrapper/s_load was not found in the design.
+WARNING: Simulation object /RAT_wrapper/r_LEDS_LO was not found in the design.
+WARNING: Simulation object /RAT_wrapper/r_LEDS_HI was not found in the design.
+WARNING: Simulation object /RAT_wrapper/r_SEGMENTS was not found in the design.
+WARNING: Simulation object /RAT_wrapper/r_DISP_EN was not found in the design.
+WARNING: Simulation object /RAT_wrapper/SWITCHES_LO_ID was not found in the design.
+WARNING: Simulation object /RAT_wrapper/SWITCHES_HI_ID was not found in the design.
+WARNING: Simulation object /RAT_wrapper/BUTTONS_ID was not found in the design.
+WARNING: Simulation object /RAT_wrapper/LEDS_LO_ID was not found in the design.
+WARNING: Simulation object /RAT_wrapper/LEDS_HI_ID was not found in the design.
+WARNING: Simulation object /RAT_wrapper/SEGMENTS_ID was not found in the design.
+WARNING: Simulation object /RAT_wrapper/DISP_EN_ID was not found in the design.
+WARNING: Simulation object /RAT_wrapper/MCU/s_inst_reg was not found in the design.
+WARNING: Simulation object /RAT_wrapper/MCU/s_pc_count was not found in the design.
+source Test_Stack_Pointer.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Test_Stack_Pointer_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1200.594 ; gain = 0.000
+add_wave {{/Test_Stack_Pointer}} 
+add_force {/Test_Stack_Pointer/RST} -radix hex {0 0ns}
+add_force {/Test_Stack_Pointer/CLK} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+add_force {/Test_Stack_Pointer/LD} -radix hex {0 0ns}
+add_force {/Test_Stack_Pointer/INCR} -radix hex {0 0ns}
+add_force {/Test_Stack_Pointer/DECR} -radix hex {0 0ns}
+run 10 us
+add_force {/Test_Stack_Pointer/RST} -radix hex {1 0ns}
+run 10 us
+add_force {/Test_Stack_Pointer/INCR} -radix hex {1 0ns}
+run 10 us
+add_force {/Test_Stack_Pointer/RST} -radix hex {0 0ns}
+run 10 us
+add_force {/Test_Stack_Pointer/DECR} -radix hex {1 0ns}
+run 10 us
+add_force {/Test_Stack_Pointer/INCR} -radix hex {0 0ns}
+run 10 us
+add_force {/Test_Stack_Pointer/INCR} -radix hex {0 0ns}
+add_force {/Test_Stack_Pointer/LD} -radix hex {1 0ns}
+add_force {/Test_Stack_Pointer/DATA} -radix hex {69 0ns}
+run 10 us
+set_property top RAT_wrapper [current_fileset]
+update_compile_order -fileset sources_1
+save_wave_config {C:/Users/afergu06/Documents/CPE233_Fall_2017/RAT_wrapper_behav.wcfg}
+set_property top RAT_wrapper [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+current_sim simulation_4
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/RAT_wrapper_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/Test_Stack_Pointer_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/xelab.pb
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RAT_wrapper' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj RAT_wrapper_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CONTROL_UNIT
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/FlagReg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FlagReg
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/MUX_2x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_2x1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Mux_2x1_10B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_2x1_10B
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Mux_4x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_4x1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/PC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PC
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RAT_MCU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_MCU
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RegisterFile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegisterFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Scratch_Ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Scratch_Ram
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Stack_Pointer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Stack_Pointer
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/and2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity and2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/cdiv2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clk_div2_buf
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/prog_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity my_prog_rom
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RAT_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_wrapper
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 8b3c45041bba49dc9a7b38ce29145ce6 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot RAT_wrapper_behav xil_defaultlib.RAT_wrapper -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling package ieee.numeric_bit
+Compiling architecture behavioral of entity xil_defaultlib.clk_div2_buf [clk_div2_buf_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(initp_00="101100111000...]
+Compiling architecture ramb16_s18_v of entity unisim.RAMB16_S18 [\RAMB16_S18(initp_00="1011001110...]
+Compiling architecture low_level_definition of entity xil_defaultlib.my_prog_rom [my_prog_rom_default]
+Compiling architecture alu_arch of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTROL_UNIT [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegisterFile [registerfile_default]
+Compiling architecture behavioral of entity xil_defaultlib.PC [pc_default]
+Compiling architecture behavioral of entity xil_defaultlib.FlagReg [flagreg_default]
+Compiling architecture behavioral of entity xil_defaultlib.and2 [and2_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_4x1 [mux_4x1_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2x1 [mux_2x1_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2x1_10B [mux_2x1_10b_default]
+Compiling architecture scratch of entity xil_defaultlib.Scratch_Ram [scratch_ram_default]
+Compiling architecture my_pointer of entity xil_defaultlib.Stack_Pointer [stack_pointer_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_MCU [rat_mcu_default]
+Compiling architecture behavioral of entity xil_defaultlib.rat_wrapper
+Built simulation snapshot RAT_wrapper_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/xsim.dir/RAT_wrapper_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/xsim.dir/RAT_wrapper_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Nov 14 22:00:57 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Nov 14 22:00:57 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RAT_wrapper_behav -key {Behavioral:sim_1:Functional:RAT_wrapper} -tclbatch {RAT_wrapper.tcl} -view {C:/Users/afergu06/Documents/CPE233_Fall_2017/RAT_wrapper_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+open_wave_config C:/Users/afergu06/Documents/CPE233_Fall_2017/RAT_wrapper_behav.wcfg
+WARNING: Simulation object /Test_Stack_Pointer/RST was not found in the design.
+WARNING: Simulation object /Test_Stack_Pointer/CLK was not found in the design.
+WARNING: Simulation object /Test_Stack_Pointer/LD was not found in the design.
+WARNING: Simulation object /Test_Stack_Pointer/INCR was not found in the design.
+WARNING: Simulation object /Test_Stack_Pointer/DECR was not found in the design.
+WARNING: Simulation object /Test_Stack_Pointer/DATA was not found in the design.
+WARNING: Simulation object /Test_Stack_Pointer/POINT_OUT was not found in the design.
+WARNING: Simulation object /Test_Stack_Pointer/t_cnt was not found in the design.
+source RAT_wrapper.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RAT_wrapper_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1220.070 ; gain = 0.000
+add_wave {{/RAT_wrapper}} 
+add_force {/RAT_wrapper/RESET} -radix hex {1 0ns}
+add_force {/RAT_wrapper/CLK} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+add_force {/RAT_wrapper/BUTTONS} -radix hex {0 0ns}
+add_force {/RAT_wrapper/SWITCHES} -radix hex {0 0ns}
+run 10 us
+add_wave {{/RAT_wrapper/MCU/my_SP}} 
+run 10 us
+add_wave {{/RAT_wrapper/MCU/my_PC}} 
+run 10 us
+add_force {/RAT_wrapper/RESET} -radix hex {0 0ns}
+run 10 us
+add_wave {{/RAT_wrapper/MCU/my_SCR}} 
+run 10 us
+save_wave_config {C:/Users/afergu06/Documents/CPE233_Fall_2017/RAT_wrapper_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/RAT_wrapper_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/Test_Stack_Pointer_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/xelab.pb
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RAT_wrapper' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj RAT_wrapper_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CONTROL_UNIT
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/FlagReg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FlagReg
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/MUX_2x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_2x1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Mux_2x1_10B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_2x1_10B
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Mux_4x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_4x1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/PC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PC
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RAT_MCU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_MCU
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RegisterFile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegisterFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Scratch_Ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Scratch_Ram
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Stack_Pointer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Stack_Pointer
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/and2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity and2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/cdiv2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clk_div2_buf
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/prog_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity my_prog_rom
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RAT_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_wrapper
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 8b3c45041bba49dc9a7b38ce29145ce6 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot RAT_wrapper_behav xil_defaultlib.RAT_wrapper -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-665] expression has 2 elements ; formal d_in expects 10 [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RAT_MCU.vhd:297]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit rat_wrapper in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/RAT_wrapper_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/Test_Stack_Pointer_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/xelab.pb
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RAT_wrapper' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj RAT_wrapper_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CONTROL_UNIT
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/FlagReg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FlagReg
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/MUX_2x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_2x1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Mux_2x1_10B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_2x1_10B
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Mux_4x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_4x1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/PC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PC
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RAT_MCU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_MCU
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RegisterFile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegisterFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Scratch_Ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Scratch_Ram
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Stack_Pointer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Stack_Pointer
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/and2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity and2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/cdiv2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clk_div2_buf
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/prog_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity my_prog_rom
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RAT_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_wrapper
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 8b3c45041bba49dc9a7b38ce29145ce6 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot RAT_wrapper_behav xil_defaultlib.RAT_wrapper -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-665] expression has 10 elements ; formal a expects 8 [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RAT_MCU.vhd:302]
+ERROR: [VRFC 10-665] expression has 10 elements ; formal b expects 8 [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RAT_MCU.vhd:303]
+ERROR: [VRFC 10-665] expression has 12 elements ; formal c expects 8 [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RAT_MCU.vhd:304]
+ERROR: [VRFC 10-665] expression has 12 elements ; formal d expects 8 [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RAT_MCU.vhd:305]
+ERROR: [VRFC 10-665] expression has 10 elements ; formal res expects 8 [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RAT_MCU.vhd:307]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit rat_wrapper in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+close [ open C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/MUX_4x1_10B.vhd w ]
+add_files C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/MUX_4x1_10B.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/RAT_wrapper_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/Test_Stack_Pointer_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/xelab.pb
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RAT_wrapper' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj RAT_wrapper_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CONTROL_UNIT
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/FlagReg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FlagReg
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/MUX_2x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_2x1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/MUX_4x1_10B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_4x1_10B
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Mux_2x1_10B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_2x1_10B
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Mux_4x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_4x1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/PC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PC
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RAT_MCU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_MCU
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RegisterFile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegisterFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Scratch_Ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Scratch_Ram
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Stack_Pointer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Stack_Pointer
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/and2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity and2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/cdiv2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clk_div2_buf
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/prog_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity my_prog_rom
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RAT_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_wrapper
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 8b3c45041bba49dc9a7b38ce29145ce6 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot RAT_wrapper_behav xil_defaultlib.RAT_wrapper -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-665] expression has 12 elements ; formal c expects 10 [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RAT_MCU.vhd:313]
+ERROR: [VRFC 10-665] expression has 12 elements ; formal d expects 10 [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RAT_MCU.vhd:314]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit rat_wrapper in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/RAT_wrapper_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/Test_Stack_Pointer_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/xelab.pb
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RAT_wrapper' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj RAT_wrapper_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CONTROL_UNIT
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/FlagReg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FlagReg
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/MUX_2x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_2x1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/MUX_4x1_10B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_4x1_10B
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Mux_2x1_10B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_2x1_10B
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Mux_4x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_4x1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/PC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PC
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RAT_MCU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_MCU
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RegisterFile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegisterFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Scratch_Ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Scratch_Ram
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Stack_Pointer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Stack_Pointer
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/and2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity and2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/cdiv2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clk_div2_buf
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/prog_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity my_prog_rom
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RAT_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_wrapper
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 8b3c45041bba49dc9a7b38ce29145ce6 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot RAT_wrapper_behav xil_defaultlib.RAT_wrapper -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-665] expression has 12 elements ; formal c expects 10 [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RAT_MCU.vhd:313]
+ERROR: [VRFC 10-665] expression has 12 elements ; formal d expects 10 [C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RAT_MCU.vhd:314]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit rat_wrapper in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/RAT_wrapper_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/Test_Stack_Pointer_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/xelab.pb
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RAT_wrapper' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj RAT_wrapper_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CONTROL_UNIT
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/FlagReg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FlagReg
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/MUX_2x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_2x1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/MUX_4x1_10B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_4x1_10B
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Mux_2x1_10B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_2x1_10B
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Mux_4x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MUX_4x1
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/PC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PC
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RAT_MCU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_MCU
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RegisterFile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegisterFile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Scratch_Ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Scratch_Ram
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Stack_Pointer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Stack_Pointer
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/and2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity and2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/cdiv2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clk_div2_buf
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/prog_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity my_prog_rom
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/RAT_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_wrapper
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 8b3c45041bba49dc9a7b38ce29145ce6 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot RAT_wrapper_behav xil_defaultlib.RAT_wrapper -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling package ieee.numeric_bit
+Compiling architecture behavioral of entity xil_defaultlib.clk_div2_buf [clk_div2_buf_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(initp_00="101100111000...]
+Compiling architecture ramb16_s18_v of entity unisim.RAMB16_S18 [\RAMB16_S18(initp_00="1011001110...]
+Compiling architecture low_level_definition of entity xil_defaultlib.my_prog_rom [my_prog_rom_default]
+Compiling architecture alu_arch of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTROL_UNIT [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegisterFile [registerfile_default]
+Compiling architecture behavioral of entity xil_defaultlib.PC [pc_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_4x1_10B [mux_4x1_10b_default]
+Compiling architecture behavioral of entity xil_defaultlib.FlagReg [flagreg_default]
+Compiling architecture behavioral of entity xil_defaultlib.and2 [and2_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_4x1 [mux_4x1_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2x1 [mux_2x1_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2x1_10B [mux_2x1_10b_default]
+Compiling architecture scratch of entity xil_defaultlib.Scratch_Ram [scratch_ram_default]
+Compiling architecture my_pointer of entity xil_defaultlib.Stack_Pointer [stack_pointer_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_MCU [rat_mcu_default]
+Compiling architecture behavioral of entity xil_defaultlib.rat_wrapper
+Built simulation snapshot RAT_wrapper_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/xsim.dir/RAT_wrapper_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/xsim.dir/RAT_wrapper_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Nov 14 22:33:10 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Nov 14 22:33:10 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RAT_wrapper_behav -key {Behavioral:sim_1:Functional:RAT_wrapper} -tclbatch {RAT_wrapper.tcl} -view {C:/Users/afergu06/Documents/CPE233_Fall_2017/RAT_wrapper_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+open_wave_config C:/Users/afergu06/Documents/CPE233_Fall_2017/RAT_wrapper_behav.wcfg
+source RAT_wrapper.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RAT_wrapper_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1241.305 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Tue Nov 14 22:33:21 2017] Launched synth_1...
+Run output will be captured here: C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.runs/synth_1/runme.log
+[Tue Nov 14 22:33:21 2017] Launched impl_1...
+Run output will be captured here: C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.runs/impl_1/RAT_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/afergu06/Documents/CPE233_Fall_2017/CPE233_Fall_2017.runs/impl_1/RAT_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 14 22:36:31 2017...

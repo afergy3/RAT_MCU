@@ -1,0 +1,76 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Nov 27 14:20:33 2017
+# Process ID: 11232
+# Current directory: D:/CPE233_Fall_2017
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3352 D:\CPE233_Fall_2017\CPE233_Fall_2017.xpr
+# Log file: D:/CPE233_Fall_2017/vivado.log
+# Journal file: D:/CPE233_Fall_2017\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/CPE233_Fall_2017/CPE233_Fall_2017.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/CPE233_Fall_2017/RAT_wrapper_behav.wcfg
+source RAT_wrapper.tcl
+add_force {/RAT_wrapper/RESET} -radix hex {1 0ns}
+run 10 us
+add_force {/RAT_wrapper/CLK} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+run 10 us
+add_force {/RAT_wrapper/BUTTONS} -radix hex {0 0ns}
+add_force {/RAT_wrapper/SWITCHES} -radix hex {0 0ns}
+run 10 us
+add_force {/RAT_wrapper/RESET} -radix hex {0 0ns}
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 ms
+add_wave {{/RAT_wrapper/MCU/OUT_PORT}} 
+add_wave {{/RAT_wrapper/MCU/my_regfile/REG}} 
+run 10 ms
+reset_run synth_1
+update_compile_order -fileset sources_1
+remove_files  D:/prog_rom.vhd
+add_files -norecurse D:/prog_rom.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/CPE233_Fall_2017/CPE233_Fall_2017.runs/impl_1/RAT_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/CPE233_Fall_2017/CPE233_Fall_2017.runs/impl_1/RAT_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/CPE233_Fall_2017/CPE233_Fall_2017.runs/impl_1/RAT_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/CPE233_Fall_2017/CPE233_Fall_2017.runs/impl_1/RAT_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_sim
