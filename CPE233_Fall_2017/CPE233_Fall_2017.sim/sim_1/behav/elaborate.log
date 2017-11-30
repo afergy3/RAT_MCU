@@ -22,8 +22,8 @@ Compiling package ieee.numeric_std
 Compiling package ieee.numeric_bit
 Compiling architecture behavioral of entity xil_defaultlib.clk_div2_buf [clk_div2_buf_default]
 Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
-Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(initp_00="101100111000...]
-Compiling architecture ramb16_s18_v of entity unisim.RAMB16_S18 [\RAMB16_S18(initp_00="1011001110...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(initp_00="000000000000...]
+Compiling architecture ramb16_s18_v of entity unisim.RAMB16_S18 [\RAMB16_S18(initp_00="0000000000...]
 Compiling architecture low_level_definition of entity xil_defaultlib.my_prog_rom [my_prog_rom_default]
 Compiling architecture alu_arch of entity xil_defaultlib.ALU [alu_default]
 Compiling architecture behavioral of entity xil_defaultlib.CONTROL_UNIT [control_unit_default]
@@ -31,6 +31,7 @@ Compiling architecture behavioral of entity xil_defaultlib.RegisterFile [registe
 Compiling architecture behavioral of entity xil_defaultlib.PC [pc_default]
 Compiling architecture behavioral of entity xil_defaultlib.MUX_4x1_10B [mux_4x1_10b_default]
 Compiling architecture behavioral of entity xil_defaultlib.FlagReg [flagreg_default]
+Compiling architecture behavioral of entity xil_defaultlib.MUX_2x1_1Bit [mux_2x1_1bit_default]
 Compiling architecture behavioral of entity xil_defaultlib.and2 [and2_default]
 Compiling architecture behavioral of entity xil_defaultlib.MUX_4x1 [mux_4x1_default]
 Compiling architecture behavioral of entity xil_defaultlib.MUX_2x1 [mux_2x1_default]

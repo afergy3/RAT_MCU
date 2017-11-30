@@ -134,6 +134,13 @@ architecture Behavioral of RAT_MCU is
               res : out STD_LOGIC_VECTOR (7 downto 0));
    end component;
    
+   component MUX_2x1_1Bit
+          Port ( a : in STD_LOGIC;
+                 b : in STD_LOGIC;
+                 sel : in STD_LOGIC;
+                 res : out STD_LOGIC);
+      end component;
+   
    component MUX_2x1_10B
           Port ( a : in STD_LOGIC_VECTOR (9 downto 0);
                  b : in STD_LOGIC_VECTOR (9 downto 0);
@@ -222,7 +229,9 @@ architecture Behavioral of RAT_MCU is
    signal S_INT_FLAG : std_logic;
    signal S_CU_INT_IN : std_logic;
    signal S_PD_DIN : std_logic_vector(9 downto 0);
-
+   signal S_I_FLAG : STD_LOGIC;
+   signal S_Z_Data : STD_LOGIC;
+   signal S_C_Data : STD_LOGIC;
    
    -- helpful aliases ------------------------------------------------------------------
    alias s_ir_immed_bits : std_logic_vector(9 downto 0) is s_inst_reg(12 downto 3); 
@@ -250,7 +259,7 @@ begin
    port map ( CLK           => CLK, 
               C             => S_C_FLAG, 
               Z             => S_Z_FLAG, 
-              INT           => INT, 
+              INT           => S_CU_INT_IN, 
               RESET         => RESET, 
               OPCODE_HI_5   => S_INST_REG(17 downto 13), 
               OPCODE_LO_2   => S_INST_REG(1 downto 0), 
@@ -316,7 +325,7 @@ begin
               res   => S_PD_DIN);  
               
    my_C_FLAG: FlagReg
-   port map ( D     => S_C,
+   port map ( D     => S_C_Data,
               LD    => S_FLG_C_LD,
               SET   => S_FLG_C_SET,
               CLR   => S_FLG_C_CLR,
@@ -324,7 +333,7 @@ begin
               Q     => S_C_FLAG);
               
    my_Z_FLAG: FlagReg
-   port map ( D     => S_Z,
+   port map ( D     => S_Z_Data,
               LD    => S_FLG_Z_LD,
               SET   => '0',
               CLR   => '0',
@@ -346,6 +355,18 @@ begin
               CLR   => '0',
               CLK   => CLK,
               Q     => S_Z_SHAD_FLAG);
+              
+   my_Z_FLAG_MUX: Mux_2x1_1Bit
+   port map ( a     => S_Z,
+              b     => S_Z_SHAD_FLAG,
+              sel   => S_FLG_LD_SEL,
+              res   => S_Z_Data);
+              
+   my_C_FLAG_MUX: Mux_2x1_1Bit
+   port map ( a     => S_C,
+              b     => S_C_SHAD_FLAG,
+              sel   => S_FLG_LD_SEL,
+              res   => S_C_Data);
    
    my_Interupt_FLAG: FlagReg
    port map ( D     => '0',

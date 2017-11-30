@@ -584,6 +584,7 @@ begin
                      NS <= ST_fet;
                      Flg_Shad_LD <= '1';
                      PC_MUX_SEL <= "10";
+                     PC_LD <= '1';
                      
 
           when others =>    -- for outer case

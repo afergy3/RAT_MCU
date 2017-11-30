@@ -60,10 +60,12 @@ begin
         RESET <= '1';
         wait for 100 ns;
         RESET <= '0';
-        wait for 100 ns;
+        wait for 600 ns;
 
         -- EDIT Add stimuli here
-        
+        BUTTONS <= "0001";
+        wait for 36 ns;
+        BUTTONS <= "0000";
 
         -- Stop the clock and hence terminate the simulation
         

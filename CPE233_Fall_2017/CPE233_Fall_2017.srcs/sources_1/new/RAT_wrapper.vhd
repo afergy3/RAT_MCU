@@ -114,7 +114,7 @@ begin
               PORT_ID  => s_port_id,
               RESET    => RESET,  
               IO_STRB  => s_load,
-              INT      => '0',
+              INT      => buttons(0),
               CLK      => s_clk);         
    -------------------------------------------------------------------------------
 

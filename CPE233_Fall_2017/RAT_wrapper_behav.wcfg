@@ -3,29 +3,174 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="tb_RAT_wrapper_behav.wdb" id="1">
+      <db_ref path="RAT_wrapper_behav.wdb" id="1">
          <top_modules>
-            <top_module name="tb_RAT_wrapper" />
+            <top_module name="RAT_wrapper" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="49359574476fs"></ZoomEndTime>
-      <Cursor1Time time="32297872000fs"></Cursor1Time>
+      <ZoomStartTime time="37927499994133fs"></ZoomStartTime>
+      <ZoomEndTime time="37927500001174fs"></ZoomEndTime>
+      <Cursor1Time time="37927500000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="175"></NameColumnWidth>
-      <ValueColumnWidth column_width="97"></ValueColumnWidth>
+      <ValueColumnWidth column_width="96"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="2" />
-   <wvobject fp_name="/tb_RAT_wrapper/LEDS" type="array">
+   <WVObjectSize size="38" />
+   <wvobject fp_name="/RAT_wrapper/LEDS" type="array">
       <obj_property name="ElementShortName">LEDS[15:0]</obj_property>
       <obj_property name="ObjectShortName">LEDS[15:0]</obj_property>
       <obj_property name="isExpanded"></obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_RAT_wrapper/SEGMENTS" type="array">
+   <wvobject fp_name="/RAT_wrapper/SEGMENTS" type="array">
       <obj_property name="ElementShortName">SEGMENTS[7:0]</obj_property>
       <obj_property name="ObjectShortName">SEGMENTS[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RAT_wrapper/DISP_EN" type="array">
+      <obj_property name="ElementShortName">DISP_EN[3:0]</obj_property>
+      <obj_property name="ObjectShortName">DISP_EN[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RAT_wrapper/SWITCHES" type="array">
+      <obj_property name="ElementShortName">SWITCHES[15:0]</obj_property>
+      <obj_property name="ObjectShortName">SWITCHES[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RAT_wrapper/BUTTONS" type="array">
+      <obj_property name="ElementShortName">BUTTONS[3:0]</obj_property>
+      <obj_property name="ObjectShortName">BUTTONS[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RAT_wrapper/RESET" type="logic">
+      <obj_property name="ElementShortName">RESET</obj_property>
+      <obj_property name="ObjectShortName">RESET</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RAT_wrapper/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RAT_wrapper/s_clk" type="logic">
+      <obj_property name="ElementShortName">s_clk</obj_property>
+      <obj_property name="ObjectShortName">s_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RAT_wrapper/s_input_port" type="array">
+      <obj_property name="ElementShortName">s_input_port[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s_input_port[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RAT_wrapper/s_output_port" type="array">
+      <obj_property name="ElementShortName">s_output_port[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s_output_port[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RAT_wrapper/s_port_id" type="array">
+      <obj_property name="ElementShortName">s_port_id[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s_port_id[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RAT_wrapper/s_load" type="logic">
+      <obj_property name="ElementShortName">s_load</obj_property>
+      <obj_property name="ObjectShortName">s_load</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RAT_wrapper/r_LEDS_LO" type="array">
+      <obj_property name="ElementShortName">r_LEDS_LO[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_LEDS_LO[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RAT_wrapper/r_LEDS_HI" type="array">
+      <obj_property name="ElementShortName">r_LEDS_HI[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_LEDS_HI[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RAT_wrapper/r_SEGMENTS" type="array">
+      <obj_property name="ElementShortName">r_SEGMENTS[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_SEGMENTS[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RAT_wrapper/r_DISP_EN" type="array">
+      <obj_property name="ElementShortName">r_DISP_EN[3:0]</obj_property>
+      <obj_property name="ObjectShortName">r_DISP_EN[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RAT_wrapper/MCU/my_SP/RST" type="logic">
+      <obj_property name="ElementShortName">RST</obj_property>
+      <obj_property name="ObjectShortName">RST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RAT_wrapper/MCU/my_SP/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RAT_wrapper/MCU/my_SP/LD" type="logic">
+      <obj_property name="ElementShortName">LD</obj_property>
+      <obj_property name="ObjectShortName">LD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RAT_wrapper/MCU/my_SP/INCR" type="logic">
+      <obj_property name="ElementShortName">INCR</obj_property>
+      <obj_property name="ObjectShortName">INCR</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RAT_wrapper/MCU/my_SP/DECR" type="logic">
+      <obj_property name="ElementShortName">DECR</obj_property>
+      <obj_property name="ObjectShortName">DECR</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RAT_wrapper/MCU/my_SP/DATA" type="array">
+      <obj_property name="ElementShortName">DATA[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RAT_wrapper/MCU/my_SP/POINT_OUT" type="array">
+      <obj_property name="ElementShortName">POINT_OUT[7:0]</obj_property>
+      <obj_property name="ObjectShortName">POINT_OUT[7:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/RAT_wrapper/MCU/my_SP/t_cnt" type="array">
+      <obj_property name="ElementShortName">t_cnt[7:0]</obj_property>
+      <obj_property name="ObjectShortName">t_cnt[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RAT_wrapper/MCU/my_PC/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RAT_wrapper/MCU/my_PC/RST" type="logic">
+      <obj_property name="ElementShortName">RST</obj_property>
+      <obj_property name="ObjectShortName">RST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RAT_wrapper/MCU/my_PC/PC_INC" type="logic">
+      <obj_property name="ElementShortName">PC_INC</obj_property>
+      <obj_property name="ObjectShortName">PC_INC</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RAT_wrapper/MCU/my_PC/PC_LD" type="logic">
+      <obj_property name="ElementShortName">PC_LD</obj_property>
+      <obj_property name="ObjectShortName">PC_LD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RAT_wrapper/MCU/my_PC/D_IN" type="array">
+      <obj_property name="ElementShortName">D_IN[9:0]</obj_property>
+      <obj_property name="ObjectShortName">D_IN[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RAT_wrapper/MCU/my_PC/PC_COUNT" type="array">
+      <obj_property name="ElementShortName">PC_COUNT[9:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_COUNT[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RAT_wrapper/MCU/my_PC/s_cnt" type="array">
+      <obj_property name="ElementShortName">s_cnt[9:0]</obj_property>
+      <obj_property name="ObjectShortName">s_cnt[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RAT_wrapper/MCU/my_SCR/DATA_IN" type="array">
+      <obj_property name="ElementShortName">DATA_IN[9:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_IN[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RAT_wrapper/MCU/my_SCR/ADDR" type="array">
+      <obj_property name="ElementShortName">ADDR[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ADDR[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RAT_wrapper/MCU/my_SCR/WE" type="logic">
+      <obj_property name="ElementShortName">WE</obj_property>
+      <obj_property name="ObjectShortName">WE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RAT_wrapper/MCU/my_SCR/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RAT_wrapper/MCU/my_SCR/DATA_OUT" type="array">
+      <obj_property name="ElementShortName">DATA_OUT[9:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_OUT[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RAT_wrapper/MCU/my_SCR/MY_RAM" type="array">
+      <obj_property name="ElementShortName">MY_RAM[0:255][9:0]</obj_property>
+      <obj_property name="ObjectShortName">MY_RAM[0:255][9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RAT_wrapper/MCU/my_SCR/MY_RAM[255]" type="array">
+      <obj_property name="ElementShortName">[255][9:0]</obj_property>
+      <obj_property name="ObjectShortName">[255][9:0]</obj_property>
    </wvobject>
 </wave_config>
