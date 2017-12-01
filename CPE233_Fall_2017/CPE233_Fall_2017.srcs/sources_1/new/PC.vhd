@@ -34,8 +34,9 @@ begin
     
     begin
     
-        if (RST = '1') then    
-            s_cnt <= (others => '0'); -- async clear
+        if (RST = '1') then   
+            s_cnt <= "0000000001"; -- async clear 
+            --s_cnt <= (others => '0'); -- async clear  THIS IS THE CORRECT ONE AND I JUST BROKE IT FOR FUN
         elsif (rising_edge(CLK)) then
             if (PC_LD = '1') then 
                 s_cnt <= D_IN;  -- load

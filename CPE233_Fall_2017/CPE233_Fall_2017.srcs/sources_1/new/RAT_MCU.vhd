@@ -45,6 +45,14 @@ architecture Behavioral of RAT_MCU is
                      CLK : in std_logic);  
    end component;
 
+   component HardwareDebounce  
+      Port(  clk    : in std_logic;
+             sig_in : in std_logic;
+             pos_pulse_out : out std_logic;
+             neg_pulse_out : out std_logic);
+   end component;
+
+
    component ALU
        Port ( A : in  STD_LOGIC_VECTOR (7 downto 0);
               B : in  STD_LOGIC_VECTOR (7 downto 0);
@@ -232,7 +240,9 @@ architecture Behavioral of RAT_MCU is
    signal S_I_FLAG : STD_LOGIC;
    signal S_Z_Data : STD_LOGIC;
    signal S_C_Data : STD_LOGIC;
-   
+   signal S_DEBOUNCED_INT : STD_LOGIC;
+   signal S_DB_INT_LOW : STD_LOGIC;
+   signal S_DB_INT_HIGH : STD_LOGIC;
    -- helpful aliases ------------------------------------------------------------------
    alias s_ir_immed_bits : std_logic_vector(9 downto 0) is s_inst_reg(12 downto 3); 
    
@@ -306,6 +316,11 @@ begin
               WE     => S_RF_WR,   
               CLK    => CLK); 
 
+   HW_DB: HardwareDebounce  
+   Port map (  clk           => CLK,
+             sig_in        => INT,
+             pos_pulse_out => S_DB_INT_HIGH,
+             neg_pulse_out => S_DB_INT_LOW);
 
    my_PC: PC 
    port map ( RST        => S_RST,
@@ -377,7 +392,7 @@ begin
               Q     => S_INT_FLAG);
               
    my_and: and2
-   port map ( a     => INT,
+   port map ( a     => S_DB_INT_HIGH,
               b     => S_INT_FLAG,
               o     => S_CU_INT_IN);
 

@@ -1,0 +1,29 @@
+-- SEI None  ------
+	 when "0110100" =>
+		I_SET <= '1';
+	
+-- CLI None  ------
+	 when "0110101" =>
+		I_CLR <= '1';
+	
+-- RETID None  ------
+	 when "0110110" =>
+		PC_LD <= '1';
+		PC_MUX_SEL <= "01";
+		SCR_ADDR_SEL <= "10";
+		SP_INCR <= '1';
+		FLG_LD_SEL <= '1';
+		FLG_C_LD <= '1';
+		FLG_Z_LD <= '1';
+		I_CLR <= '1';
+	
+-- RETIE None  ------
+	 when "0110111" =>
+		PC_LD <= '1';
+		PC_MUX_SEL <= "01";
+		SCR_ADDR_SEL <= "10";
+		SP_INCR <= '1';
+		FLG_LD_SEL <= '1';
+		FLG_C_LD <= '1';
+		FLG_Z_LD <= '1';
+		I_SET <= '1';

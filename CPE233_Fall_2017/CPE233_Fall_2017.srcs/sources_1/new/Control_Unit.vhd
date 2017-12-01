@@ -586,6 +586,16 @@ begin
                      PC_MUX_SEL <= "10";
                      PC_LD <= '1';
                      
+                     I_CLR <= '1';
+                     
+                                         
+                     SP_LD   <= '0';   
+                     SP_INCR <= '0'; 
+                     SP_DECR <= '1'; 
+                     
+                     SCR_WR       <= '1';       
+                     SCR_DATA_SEL <= '1';       
+                     SCR_ADDR_SEL <= "11";
 
           when others =>    -- for outer case
                NS <= ST_fet;		    

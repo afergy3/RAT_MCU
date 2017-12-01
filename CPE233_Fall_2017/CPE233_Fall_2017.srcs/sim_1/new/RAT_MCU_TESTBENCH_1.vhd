@@ -58,13 +58,28 @@ begin
         -- Reset generation
         -- EDIT: Check that RESET is really your reset signal
         RESET <= '1';
-        wait for 100 ns;
+        wait for 200 ns;
         RESET <= '0';
-        wait for 600 ns;
+        wait for 5000 ns;
 
         -- EDIT Add stimuli here
         BUTTONS <= "0001";
-        wait for 36 ns;
+        wait for 500 ns;
+        BUTTONS <= "0000";
+        wait for 2000 ns;
+        
+        BUTTONS <= "0001";
+        wait for 500 ns;
+        BUTTONS <= "0000";
+        wait for 2000 ns;
+        
+        BUTTONS <= "0001";
+        wait for 500 ns;
+        BUTTONS <= "0000";
+        wait for 2000 ns;
+        
+        BUTTONS <= "0001";
+        wait for 500 ns;
         BUTTONS <= "0000";
 
         -- Stop the clock and hence terminate the simulation

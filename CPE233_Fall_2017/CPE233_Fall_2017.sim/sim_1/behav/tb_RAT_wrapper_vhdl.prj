@@ -2,6 +2,7 @@
 vhdl xil_defaultlib  "../../../CPE233_Fall_2017.srcs/sources_1/new/ALU.vhd"
 vhdl xil_defaultlib  "../../../CPE233_Fall_2017.srcs/sources_1/new/Control_Unit.vhd"
 vhdl xil_defaultlib  "../../../CPE233_Fall_2017.srcs/sources_1/new/FlagReg.vhd"
+vhdl xil_defaultlib  "../../../CPE233_Fall_2017.srcs/sources_1/new/HardwareDebounce.vhd"
 vhdl xil_defaultlib  "../../../CPE233_Fall_2017.srcs/sources_1/new/MUX_2x1.vhd"
 vhdl xil_defaultlib  "../../../CPE233_Fall_2017.srcs/sources_1/new/MUX_4x1_10B.vhd"
 vhdl xil_defaultlib  "../../../CPE233_Fall_2017.srcs/sources_1/new/Mux_2x1_10B.vhd"

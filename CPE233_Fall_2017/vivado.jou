@@ -2,166 +2,144 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Wed Nov 29 14:20:58 2017
-# Process ID: 15104
-# Current directory: D:/CPE233_Fall_2017
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14956 D:\CPE233_Fall_2017\CPE233_Fall_2017.xpr
-# Log file: D:/CPE233_Fall_2017/vivado.log
-# Journal file: D:/CPE233_Fall_2017\vivado.jou
+# Start of session at: Fri Dec  1 02:36:59 2017
+# Process ID: 3680
+# Current directory: C:/Users/afergu06/Documents/GitHub/RAT_MCU/CPE233_Fall_2017
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent236 C:\Users\afergu06\Documents\GitHub\RAT_MCU\CPE233_Fall_2017\CPE233_Fall_2017.xpr
+# Log file: C:/Users/afergu06/Documents/GitHub/RAT_MCU/CPE233_Fall_2017/vivado.log
+# Journal file: C:/Users/afergu06/Documents/GitHub/RAT_MCU/CPE233_Fall_2017\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project D:/CPE233_Fall_2017/CPE233_Fall_2017.xpr
+open_project C:/Users/afergu06/Documents/GitHub/RAT_MCU/CPE233_Fall_2017/CPE233_Fall_2017.xpr
 update_compile_order -fileset sources_1
-reset_run impl_1 -prev_step 
+launch_simulation
+open_wave_config C:/Users/afergu06/Documents/GitHub/RAT_MCU/CPE233_Fall_2017/RAT_wrapper_behav.wcfg
+source tb_RAT_wrapper.tcl
+run 10 us
+restart
+restart
+restart
+restart
+add_wave {{/tb_RAT_wrapper/dut/MCU/my_C_FLAG/Q}} 
+add_wave {{/tb_RAT_wrapper/dut/MCU/my_Z_FLAG/Q}} 
+add_wave {{/tb_RAT_wrapper/dut/MCU/my_Shad_C_FLAG/Q}} 
+add_wave {{/tb_RAT_wrapper/dut/MCU/my_Shad_Z_FLAG/Q}} 
+add_wave {{/tb_RAT_wrapper/dut/MCU/my_PC/PC_COUNT}} 
+add_wave {{/tb_RAT_wrapper/dut/MCU/my_cu/INT}} 
+add_wave {{/tb_RAT_wrapper/dut/MCU/my_cu/PS}} 
+add_wave {{/tb_RAT_wrapper/dut/MCU/my_cu/NS}} 
+run 10 us
+add_wave {{/tb_RAT_wrapper/dut/MCU/my_regfile/REG}} 
+restart
+run 10 us
+add_wave {{/tb_RAT_wrapper/dut/MCU/prog_rom/INSTRUCTION}} 
+restart
+run 10 us
+add_wave {{/tb_RAT_wrapper/dut/MCU/my_cu/ALU_SEL}} 
+restart
+run 10 us
+relaunch_sim
+restart
+run 10 us
+relaunch_sim
+restart
+run 10 us
+restart
+run 10 us
+add_wave {{/tb_RAT_wrapper/dut/MCU/my_SCR/DATA_OUT}} 
+add_wave {{/tb_RAT_wrapper/dut/MCU/my_SCR/MY_RAM}} 
+relaunch_sim
+restart
+run 10 us
+relaunch_sim
+restart
+run 10 us
+close [ open C:/Users/afergu06/Documents/GitHub/RAT_MCU/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/HardwareDebounce.vhd w ]
+add_files C:/Users/afergu06/Documents/GitHub/RAT_MCU/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/HardwareDebounce.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -norecurse C:/Users/afergu06/Documents/GitHub/RAT_MCU/prog_rom.vhd
+update_compile_order -fileset sources_1
 launch_runs impl_1 -to_step write_bitstream -jobs 2
 wait_on_run impl_1
-open_run impl_1
 open_hw
 connect_hw_server
 open_hw_target
-set_property PROGRAM.FILE {D:/CPE233_Fall_2017/CPE233_Fall_2017.runs/impl_1/RAT_wrapper.bit} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/afergu06/Documents/GitHub/RAT_MCU/CPE233_Fall_2017/CPE233_Fall_2017.runs/impl_1/RAT_wrapper.bit} [get_hw_devices xc7a35t_0]
 current_hw_device [get_hw_devices xc7a35t_0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/CPE233_Fall_2017/CPE233_Fall_2017.runs/impl_1/RAT_wrapper.bit} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/afergu06/Documents/GitHub/RAT_MCU/CPE233_Fall_2017/CPE233_Fall_2017.runs/impl_1/RAT_wrapper.bit} [get_hw_devices xc7a35t_0]
 program_hw_devices [get_hw_devices xc7a35t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-remove_files  D:/prog_rom.vhd
-add_files -norecurse D:/prog_rom.vhd
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
+close_sim
 launch_simulation
-open_wave_config D:/CPE233_Fall_2017/RAT_wrapper_behav.wcfg
-source RAT_wrapper.tcl
-add_force {/RAT_wrapper/RESET} -radix hex {1 0ns}
-add_force {/RAT_wrapper/CLK} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
+open_wave_config C:/Users/afergu06/Documents/GitHub/RAT_MCU/CPE233_Fall_2017/RAT_wrapper_behav.wcfg
+source tb_RAT_wrapper.tcl
+restart
 run 10 us
-add_force {/RAT_wrapper/BUTTONS} -radix hex {0 0ns}
-add_force {/RAT_wrapper/SWITCHES} -radix hex {0 0ns}
-add_force {/RAT_wrapper/RESET} -radix hex {0 0ns}
-run 10 ms
-add_force {/RAT_wrapper/BUTTONS} -radix hex {1111 0ns}
-add_force {/RAT_wrapper/BUTTONS} -radix hex {15 0ns}
-add_force {/RAT_wrapper/BUTTONS} -radix hex {16 0ns}
-add_force {/RAT_wrapper/BUTTONS} -radix hex {F 0ns}
-run 10 ms
-add_force {/RAT_wrapper/BUTTONS} -radix hex {0 0ns}
-run 10 ms
-remove_files  D:/prog_rom.vhd
-add_files -norecurse D:/prog_rom.vhd
+close_sim
+launch_simulation
+open_wave_config C:/Users/afergu06/Documents/GitHub/RAT_MCU/CPE233_Fall_2017/RAT_wrapper_behav.wcfg
+source tb_RAT_wrapper.tcl
+remove_files  C:/Users/afergu06/Documents/GitHub/RAT_MCU/prog_rom.vhd
+add_files -norecurse C:/Users/afergu06/Documents/GitHub/RAT_MCU/prog_rom.vhd
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
 close_sim
 launch_simulation
-open_wave_config D:/CPE233_Fall_2017/RAT_wrapper_behav.wcfg
-source RAT_wrapper.tcl
-add_force {/RAT_wrapper/RESET} -radix hex {1 0ns}
-add_force {/RAT_wrapper/CLK} -radix hex {1 0ns} {0 50000ps} -repeat_every 100000ps
-run 10 ms
-add_force {/RAT_wrapper/RESET} -radix hex {0 0ns}
-add_force {/RAT_wrapper/BUTTONS} -radix hex {0 0ns}
-add_force {/RAT_wrapper/SWITCHES} -radix hex {0 0ns}
-run 10 ms
-restart
-run 10 ms
-restart
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-close [ open D:/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sim_1/new/RAT_MCU_TESTBENCH_1.vhd w ]
-add_files -fileset sim_1 D:/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sim_1/new/RAT_MCU_TESTBENCH_1.vhd
-update_compile_order -fileset sim_1
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top RAT_MCU_TESTBENCH_1 [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_1
-reset_run synth_1
-launch_runs impl_1 -jobs 2
-wait_on_run impl_1
-update_compile_order -fileset sim_1
-update_compile_order -fileset sim_1
-reset_run synth_1
-launch_simulation
-launch_simulation
-launch_simulation
-open_wave_config D:/CPE233_Fall_2017/RAT_wrapper_behav.wcfg
+open_wave_config C:/Users/afergu06/Documents/GitHub/RAT_MCU/CPE233_Fall_2017/RAT_wrapper_behav.wcfg
 source tb_RAT_wrapper.tcl
-run all
-add_wave {{/tb_RAT_wrapper/LEDS}} 
-add_wave {{/tb_RAT_wrapper/SEGMENTS}} 
-relaunch_sim
-run all
-run all
-run all
-run all
-run all
-run all
-run 100 ms
-restart
-run 100 ns
-run 100 ns
-run 100 ns
-run 100 ns
-relaunch_sim
-run 100 ns
-run 100 ns
-run 100 ns
-run 100 ns
-run 100 ns
-relaunch_sim
-run 100 ns
-run 100 ns
-run 100 ns
-run 100 ns
-run 100 ns
-run 100 ms
-add_wave {{/tb_RAT_wrapper/dut/MCU/my_cu/PS}} 
-restart
-run 100 us
-restart
-run 40 us
-restart
-run 30 us
-restart
-run 40 us
-restart
-run 40 us
-restart
-run 40 us
-restart
-run 17 us
-restart
-run 17 us
-relaunch_sim
-relaunch_sim
-restart
-run 40 us
-launch_runs impl_1 -jobs 2
-wait_on_run impl_1
+reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 2
 wait_on_run impl_1
+restart
+run 10 us
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/afergu06/Documents/GitHub/RAT_MCU/CPE233_Fall_2017/CPE233_Fall_2017.runs/impl_1/RAT_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/CPE233_Fall_2017/CPE233_Fall_2017.runs/impl_1/RAT_wrapper.bit} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/afergu06/Documents/GitHub/RAT_MCU/CPE233_Fall_2017/CPE233_Fall_2017.runs/impl_1/RAT_wrapper.bit} [get_hw_devices xc7a35t_0]
 program_hw_devices [get_hw_devices xc7a35t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/CPE233_Fall_2017/CPE233_Fall_2017.runs/impl_1/RAT_wrapper.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/CPE233_Fall_2017/CPE233_Fall_2017.runs/impl_1/RAT_wrapper.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+remove_files  C:/Users/afergu06/Documents/GitHub/RAT_MCU/prog_rom.vhd
+add_files -norecurse C:/Users/afergu06/Documents/GitHub/RAT_MCU/prog_rom.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+open_wave_config C:/Users/afergu06/Documents/GitHub/RAT_MCU/CPE233_Fall_2017/RAT_wrapper_behav.wcfg
+source tb_RAT_wrapper.tcl
+run 10 us
+restart
+run 10 us
+restart
+run 10 us
+add_wave {{/tb_RAT_wrapper/dut/MCU/INT}} 
+restart
+run 10 us
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config C:/Users/afergu06/Documents/GitHub/RAT_MCU/CPE233_Fall_2017/RAT_wrapper_behav.wcfg
+source tb_RAT_wrapper.tcl
+restart
+run 10 us
+restart
+run 10 ms
+restart
+run 10 ms
 reset_run synth_1
-launch_runs synth_1 -jobs 2
-wait_on_run synth_1
-remove_files  D:/prog_rom.vhd
-add_files -norecurse D:/prog_rom.vhd
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+remove_files  C:/Users/afergu06/Documents/GitHub/RAT_MCU/prog_rom.vhd
+add_files -norecurse C:/Users/afergu06/Documents/GitHub/RAT_MCU/prog_rom.vhd
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
 reset_run synth_1
@@ -169,58 +147,33 @@ launch_runs impl_1 -to_step write_bitstream -jobs 2
 wait_on_run impl_1
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/CPE233_Fall_2017/CPE233_Fall_2017.runs/impl_1/RAT_wrapper.bit} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/afergu06/Documents/GitHub/RAT_MCU/CPE233_Fall_2017/CPE233_Fall_2017.runs/impl_1/RAT_wrapper.bit} [get_hw_devices xc7a35t_0]
 program_hw_devices [get_hw_devices xc7a35t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/CPE233_Fall_2017/CPE233_Fall_2017.runs/impl_1/RAT_wrapper.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_sim
-launch_simulation
-open_wave_config D:/CPE233_Fall_2017/RAT_wrapper_behav.wcfg
-source tb_RAT_wrapper.tcl
-run 40 us
 restart
-run 40 us
-run 40 ms
-remove_files  D:/prog_rom.vhd
-add_files -norecurse D:/prog_rom.vhd
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-close_sim
-launch_simulation
-open_wave_config D:/CPE233_Fall_2017/RAT_wrapper_behav.wcfg
-source tb_RAT_wrapper.tcl
-run 40 us
+run 10 ms
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
 restart
-run 40 us
-remove_files  D:/prog_rom.vhd
-add_files -norecurse D:/prog_rom.vhd
+run 10 ms
+remove_files  C:/Users/afergu06/Documents/GitHub/RAT_MCU/prog_rom.vhd
+add_files -norecurse C:/Users/afergu06/Documents/GitHub/RAT_MCU/prog_rom.vhd
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs impl_1 -jobs 2
-wait_on_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/CPE233_Fall_2017/CPE233_Fall_2017.runs/impl_1/RAT_wrapper.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-save_wave_config {D:/CPE233_Fall_2017/RAT_wrapper_behav.wcfg}
 close_sim
 launch_simulation
-open_wave_config D:/CPE233_Fall_2017/RAT_wrapper_behav.wcfg
+open_wave_config C:/Users/afergu06/Documents/GitHub/RAT_MCU/CPE233_Fall_2017/RAT_wrapper_behav.wcfg
 source tb_RAT_wrapper.tcl
-current_sim simulation_2
-run 1 s
-add_bp {D:/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Scratch_Ram.vhd} 40
-remove_bps -file {D:/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Scratch_Ram.vhd} -line 40
-remove_files  D:/prog_rom.vhd
-add_files -norecurse D:/prog_rom.vhd
+close_sim
+launch_simulation
+open_wave_config C:/Users/afergu06/Documents/GitHub/RAT_MCU/CPE233_Fall_2017/RAT_wrapper_behav.wcfg
+source tb_RAT_wrapper.tcl
+restart
+run 10 ms
+remove_files  C:/Users/afergu06/Documents/GitHub/RAT_MCU/prog_rom.vhd
+add_files -norecurse C:/Users/afergu06/Documents/GitHub/RAT_MCU/prog_rom.vhd
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
 reset_run synth_1
@@ -228,106 +181,21 @@ launch_runs impl_1 -to_step write_bitstream -jobs 2
 wait_on_run impl_1
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {D:/CPE233_Fall_2017/CPE233_Fall_2017.runs/impl_1/RAT_wrapper.bit} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/afergu06/Documents/GitHub/RAT_MCU/CPE233_Fall_2017/CPE233_Fall_2017.runs/impl_1/RAT_wrapper.bit} [get_hw_devices xc7a35t_0]
 program_hw_devices [get_hw_devices xc7a35t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-remove_files  D:/prog_rom.vhd
-add_files -norecurse D:/prog_rom.vhd
+remove_files  C:/Users/afergu06/Documents/GitHub/RAT_MCU/prog_rom.vhd
+add_files -norecurse C:/Users/afergu06/Documents/GitHub/RAT_MCU/prog_rom.vhd
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
 reset_run synth_1
-current_sim simulation_6
-close_sim
-launch_simulation
-open_wave_config D:/CPE233_Fall_2017/RAT_wrapper_behav.wcfg
-source tb_RAT_wrapper.tcl
-run 1 s
-close_sim
-launch_simulation
-open_wave_config D:/CPE233_Fall_2017/RAT_wrapper_behav.wcfg
-source tb_RAT_wrapper.tcl
-add_wave {{/tb_RAT_wrapper/dut/MCU/my_PC}} 
-add_wave {{/tb_RAT_wrapper/dut/MCU/my_SCR}} 
-run 100 us
-add_wave {{/tb_RAT_wrapper/dut/MCU/my_SP}} 
-restart
-run 100 us
-add_wave {{/tb_RAT_wrapper/dut/MCU/my_Interupt_FLAG}} 
-add_wave {{/tb_RAT_wrapper/dut/MCU/my_and}} 
-restart
-run 100 us
-restart
-run 100 us
-add_wave {{/tb_RAT_wrapper}} 
-restart
-run 100 us
-relaunch_sim
-run 100 us
-restart
-run 1200 ns
-add_wave {{/tb_RAT_wrapper/dut/MCU/my_cu}} 
-relaunch_sim
-restart
-run 1200 ns
-relaunch_sim
-relaunch_sim
-restart
-relaunch_sim
-run 1200 ns
-restart
-run 1200 ns
-close_sim
-launch_simulation
-open_wave_config D:/CPE233_Fall_2017/RAT_wrapper_behav.wcfg
-source tb_RAT_wrapper.tcl
-add_wave {{/tb_RAT_wrapper/dut/MCU/my_C_FLAG/Q}} 
-add_wave {{/tb_RAT_wrapper/dut/MCU/my_Z_FLAG/Q}} 
-add_wave {{/tb_RAT_wrapper/dut/MCU/my_Shad_C_FLAG}} 
-add_wave {{/tb_RAT_wrapper/dut/MCU/my_Shad_C_FLAG/Q}} 
-add_wave {{/tb_RAT_wrapper/dut/MCU/my_Shad_Z_FLAG/Q}} 
-add_wave {{/tb_RAT_wrapper/dut/MCU/my_PC/PC_COUNT}} 
-add_wave {{/tb_RAT_wrapper/dut/MCU/my_cu/INT}} 
-add_wave {{/tb_RAT_wrapper/dut/MCU/my_cu/PS}} 
-add_wave {{/tb_RAT_wrapper/dut/MCU/my_cu/NS}} 
-run 1200 ns
-restart
-run 1200 ns
-add_wave {{/tb_RAT_wrapper/dut/MCU/my_Z_FLAG}} 
-restart
-run 1200 ns
-add_wave {{/tb_RAT_wrapper/dut/MCU/my_C_FLAG}} 
-restart
-run 1200 ns
-add_wave {{/tb_RAT_wrapper/dut/MCU/my_Shad_C_FLAG}} 
-add_wave {{/tb_RAT_wrapper/dut/MCU/my_Shad_Z_FLAG}} 
-close [ open D:/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Mux_2x1_1Bit.vhd w ]
-add_files D:/CPE233_Fall_2017/CPE233_Fall_2017.srcs/sources_1/new/Mux_2x1_1Bit.vhd
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-close_sim
-launch_simulation
-open_wave_config D:/CPE233_Fall_2017/RAT_wrapper_behav.wcfg
-source tb_RAT_wrapper.tcl
-add_wave {{/tb_RAT_wrapper/dut/MCU/my_C_FLAG/Q}} 
-add_wave {{/tb_RAT_wrapper/dut/MCU/my_Z_FLAG/Q}} 
-add_wave {{/tb_RAT_wrapper/dut/MCU/my_Shad_C_FLAG/Q}} 
-add_wave {{/tb_RAT_wrapper/dut/MCU/my_Shad_Z_FLAG/Q}} 
-add_wave {{/tb_RAT_wrapper/dut/MCU/my_PC/PC_COUNT}} 
-add_wave {{/tb_RAT_wrapper/dut/MCU/my_cu/INT}} 
-add_wave {{/tb_RAT_wrapper/dut/MCU/my_cu/PS}} 
-add_wave {{/tb_RAT_wrapper/dut/MCU/my_cu/NS}} 
-restart
-run 1200 ns
-add_wave {{/tb_RAT_wrapper/dut/MCU/my_C_FLAG}} 
-add_wave {{/tb_RAT_wrapper/dut/MCU/my_Z_FLAG}} 
-restart
-run 1200 ns
-relaunch_sim
-restart
-run 1200 ns
-save_wave_config {D:/CPE233_Fall_2017/RAT_wrapper_behav.wcfg}
-close_sim
-save_wave_config {D:/CPE233_Fall_2017/RAT_wrapper_behav.wcfg}
-close_sim
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/afergu06/Documents/GitHub/RAT_MCU/CPE233_Fall_2017/CPE233_Fall_2017.runs/impl_1/RAT_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
