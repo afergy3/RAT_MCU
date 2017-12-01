@@ -199,3 +199,12 @@ refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 2
 wait_on_run impl_1
+close_sim
+launch_simulation
+open_wave_config C:/Users/afergu06/Documents/GitHub/RAT_MCU/CPE233_Fall_2017/RAT_wrapper_behav.wcfg
+source tb_RAT_wrapper.tcl
+run 10 us
+restart
+run 10 us
+restart
+close_sim
