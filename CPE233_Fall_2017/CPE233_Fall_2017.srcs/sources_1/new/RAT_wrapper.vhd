@@ -129,7 +129,7 @@ begin
       elsif (s_port_id = SWITCHES_HI_ID) then
             s_input_port <= SWITCHES(15 downto 8);
       elsif (s_port_id = BUTTONS_ID) then 
-         s_input_port <= "0000" & BUTTONS; 
+         s_input_port <= "00000" & BUTTONS(3 downto 1); 
       else
          s_input_port <= x"00";
       end if;

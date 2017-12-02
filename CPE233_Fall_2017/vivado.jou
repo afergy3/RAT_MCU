@@ -2,13 +2,90 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Fri Dec  1 15:15:41 2017
-# Process ID: 15364
+# Start of session at: Fri Dec  1 15:17:26 2017
+# Process ID: 7364
 # Current directory: C:/Users/oousterm/Documents/GitHub/RAT_MCU/CPE233_Fall_2017
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15780 C:\Users\oousterm\Documents\GitHub\RAT_MCU\CPE233_Fall_2017\CPE233_Fall_2017.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11196 C:\Users\oousterm\Documents\GitHub\RAT_MCU\CPE233_Fall_2017\CPE233_Fall_2017.xpr
 # Log file: C:/Users/oousterm/Documents/GitHub/RAT_MCU/CPE233_Fall_2017/vivado.log
 # Journal file: C:/Users/oousterm/Documents/GitHub/RAT_MCU/CPE233_Fall_2017\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/oousterm/Documents/GitHub/RAT_MCU/CPE233_Fall_2017/CPE233_Fall_2017.xpr
 update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/oousterm/Documents/GitHub/RAT_MCU/CPE233_Fall_2017/RAT_wrapper_behav.wcfg
+source tb_RAT_wrapper.tcl
+restart
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/oousterm/Documents/GitHub/RAT_MCU/CPE233_Fall_2017/CPE233_Fall_2017.runs/impl_1/RAT_wrapper.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/oousterm/Documents/GitHub/RAT_MCU/CPE233_Fall_2017/CPE233_Fall_2017.runs/impl_1/RAT_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_sim
+launch_simulation
+open_wave_config C:/Users/oousterm/Documents/GitHub/RAT_MCU/CPE233_Fall_2017/RAT_wrapper_behav.wcfg
+source tb_RAT_wrapper.tcl
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/oousterm/Documents/GitHub/RAT_MCU/CPE233_Fall_2017/CPE233_Fall_2017.runs/impl_1/RAT_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+remove_files  C:/Users/oousterm/Documents/GitHub/RAT_MCU/prog_rom.vhd
+add_files -norecurse C:/Users/oousterm/Documents/GitHub/RAT_MCU/prog_rom.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/oousterm/Documents/GitHub/RAT_MCU/CPE233_Fall_2017/CPE233_Fall_2017.runs/impl_1/RAT_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+remove_files  C:/Users/oousterm/Documents/GitHub/RAT_MCU/prog_rom.vhd
+add_files -norecurse C:/Users/oousterm/Documents/GitHub/RAT_MCU/prog_rom.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/oousterm/Documents/GitHub/RAT_MCU/CPE233_Fall_2017/CPE233_Fall_2017.runs/impl_1/RAT_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+remove_files  C:/Users/oousterm/Documents/GitHub/RAT_MCU/prog_rom.vhd
+add_files -norecurse C:/Users/oousterm/Documents/GitHub/RAT_MCU/prog_rom.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/oousterm/Documents/GitHub/RAT_MCU/CPE233_Fall_2017/CPE233_Fall_2017.runs/impl_1/RAT_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_sim

@@ -30,20 +30,18 @@ architecture Behavioral of PC is
     
 begin   
    
-    process (CLK, RST, s_cnt) 
+    process (CLK, RST, s_cnt, D_IN, PC_INC) 
     
     begin
     
-        if (RST = '1') then   
-            s_cnt <= "0000000001"; -- async clear 
             --s_cnt <= (others => '0'); -- async clear  THIS IS THE CORRECT ONE AND I JUST BROKE IT FOR FUN
-        elsif (rising_edge(CLK)) then
-            if (PC_LD = '1') then 
+        if (rising_edge(CLK)) then
+            if (RST = '1') then   
+                s_cnt <= "0000000001"; -- async clear 
+            elsif (PC_LD = '1') then 
                 s_cnt <= D_IN;  -- load
-            else 
-                if (PC_INC = '1') then  
-                    s_cnt <= s_cnt + 1; -- incr
-                end if;
+            elsif (PC_INC = '1') then  
+                s_cnt <= s_cnt + 1; -- incr
             end if;
         end if;
         

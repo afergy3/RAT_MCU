@@ -2,13 +2,13 @@
 # Webtalk v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Fri Dec  1 15:15:31 2017
-# Process ID: 5948
+# Start of session at: Fri Dec  1 16:14:15 2017
+# Process ID: 12084
 # Current directory: C:/Users/oousterm/Documents/GitHub/RAT_MCU/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav
 # Command line: wbtcv.exe -mode batch -source C:/Users/oousterm/Documents/GitHub/RAT_MCU/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/xsim.dir/tb_RAT_wrapper_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: C:/Users/oousterm/Documents/GitHub/RAT_MCU/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/webtalk.log
 # Journal file: C:/Users/oousterm/Documents/GitHub/RAT_MCU/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav\webtalk.jou
 #-----------------------------------------------------------
 source C:/Users/oousterm/Documents/GitHub/RAT_MCU/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/xsim.dir/tb_RAT_wrapper_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] 'C:/Users/oousterm/Documents/GitHub/RAT_MCU/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/xsim.dir/tb_RAT_wrapper_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Dec  1 15:15:32 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
-INFO: [Common 17-206] Exiting Webtalk at Fri Dec  1 15:15:32 2017...
+INFO: [Common 17-186] 'C:/Users/oousterm/Documents/GitHub/RAT_MCU/CPE233_Fall_2017/CPE233_Fall_2017.sim/sim_1/behav/xsim.dir/tb_RAT_wrapper_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Dec  1 16:14:16 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec  1 16:14:16 2017...
